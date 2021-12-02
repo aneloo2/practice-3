@@ -1,0 +1,178 @@
+.bground {
+  background: #fff;
+}
+s
+}
+span, a {
+  text-decoration: none;
+  color: #000;
+}
+
+p, a  {
+  text-decoration: none;
+}
+.error{
+  color: red;
+  font-weight: bold;
+}
+.btn {
+  background: #000;
+  color: #fff;
+}
+
+.content {
+  transform: translate(10px);
+}
+
+.content:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+.content:hover:before {
+  animation: animate 1s linear forwards;
+  animation-delay: 1s;
+
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #000;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+
+  }
+
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #000;
+    border-right-color: #000;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #000;
+    border-right-color: #000;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+
+  }
+}
+
+
+.content:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+.content:hover:after {
+  animation: animate2 1s linear forwards;
+  animation-delay: 1s;
+
+}
+
+@keyframes animate2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #000;
+
+
+  }
+
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #000;
+    border-left-color: #000;
+
+
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #000;
+    border-left-color: #000;
+
+
+  }
+}
+
+
+.curcor {
+  
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 30px;
+}
+
+.text-effect {
+  animation: animate3 4s steps(15) 1s 1 normal both,
+             cursor 500ms steps(15) infinite normal;
+
+}
+ @keyframes animate3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 208px;
+  }
+ }
+
+ @keyframes cursor {
+  from {
+    border-right-color: #000;
+  }
+  to {
+    border-right-color: transparent;
+  }
+ }
+
+.blink {
+  transform: translate(-50%, -50%);
+
+}
+.span {
+
+  animation: blink 1s infinite;
+  color: red;
+
+}
+@keyframes blink {
+  0% {opacity: 0;}
+  50% {opacity: .5;}
+  100% {opacity: 1;}
+}
